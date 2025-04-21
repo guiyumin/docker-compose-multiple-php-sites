@@ -1,0 +1,21 @@
+.PHONY: d-up d-stop d-down d-restart d-logs
+
+d-up:
+	docker compose up -d
+
+
+d-stop:
+	docker compose stop
+
+d-down:
+	docker compose down
+
+
+d-restart:
+	docker compose restart
+
+
+d-logs:
+	docker compose logs -f
+
+
