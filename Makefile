@@ -1,4 +1,4 @@
-.PHONY: d-up d-stop d-down d-restart d-logs
+.PHONY: d-up d-stop d-down d-restart d-logs d-clean
 
 d-up:
 	docker compose up -d
