@@ -4,7 +4,9 @@ networks:
 
 services:
   php:
-    image: php:8.4-fpm-alpine
+    build:
+      context: .
+      dockerfile: php.dockerfile
     container_name: wpsite_php_${SITE_NAME:-default}
     restart: unless-stopped
     volumes:
