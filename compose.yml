@@ -14,9 +14,11 @@ services:
     environment:
       # Pass cloud database details via environment variables
       WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+      WORDPRESS_DB_PORT: ${WORDPRESS_DB_PORT}
       WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+      WORDPRESS_DB_CA: ${WORDPRESS_DB_CA}
       # You might need other WP constants here too
 
   nginx:
