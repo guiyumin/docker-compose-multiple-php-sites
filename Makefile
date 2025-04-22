@@ -19,3 +19,5 @@ d-logs:
 	docker compose logs -f
 
 
+d-clean:
+	docker rmi $(docker images -a -q)
